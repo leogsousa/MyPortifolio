@@ -141,10 +141,6 @@ const Link = styled.a`
 function App() {
 
   const [scroll, setScroll] = useState(0)
-  
-  useEffect(() => {
-    setScroll(document.documentElement.scrollTop)
-  },[scroll]);
 
   // const menu = () => {    
   //   if (scroll >= 100) {
@@ -181,6 +177,10 @@ function App() {
   const goToMyContacts = () => {
     window.scroll(0, 3023)
   }
+
+  useEffect(() => {
+    setScroll(document.documentElement.scrollTop)
+  },[scroll]);
 
   const menu = document.getElementById('menu'); 
 
