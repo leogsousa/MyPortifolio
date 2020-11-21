@@ -1,22 +1,85 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #FFF;
 }
 
-html{
-  scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  outline: none;
+}
+/* 
+div > span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background: #0062cc;
+  visibility: hidden;
+  border-radius: 0.5px;
+  transform: scaleX(0);
+  transition: 0.15s linear;
+}
+div > span:hover:before,
+div > span:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
-.menuFixo{
-  height: 200px;
+@keyframes hover-v {
+  0%{
+    transform: scaleX(0);
+    height: 5px;
+  }
+  45%{   
+    transform: scaleX(1);
+    height: 5px;
+  }
+  55%{
+    height: 5px;
+  }
+  100%{
+    transform: scaleX(1);
+    height: 3.8rem;
+  }
 }
+@keyframes no-hover-v {
+  0% {
+    transform: scaleX(1);
+    height: 3.8rem;
+  }
+  45%{
+    height: 5px;
+  }
+  55%{   
+    transform: scaleX(1);
+    height: 5px;
+    opacity: 1;
+  }
+  100%{
+    transform: scaleX(0);
+    height: 5px;
+    opacity: .02;
+  }
+} */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0E; 
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: #555; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444; 
 }
