@@ -58,7 +58,7 @@ function ContactsPage() {
     <ContactsContainer>
       <Text>
         <h3>Ei! Bora conversar?! 💬</h3><br/>
-        Me mande uma menssagem nas minhas redes e acompanhe nas mídias o meu progresso como Desenvolvedor.<br/><br/>
+        Me mande uma mensagem nas minhas redes e acompanhe nas mídias o meu progresso como Desenvolvedor.<br/><br/>
         &nbsp;📍 : Brasília - Distrito Federal <br/>
         📧:<strong> leonardogomessousa5@gmail.com </strong>
         <br/>

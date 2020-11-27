@@ -1,7 +1,26 @@
 import React, { useContext } from 'react'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import { useHistory } from 'react-router-dom'
 import MenuContext from '../contexts/MenuContext';
+
+const fade = keyframes`
+  from{
+    opacity: 0;
+    transform: translateX(100%);
+  }to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+const defa = keyframes`
+  from{
+    opacity: 0;
+    transform: translateX(0);
+  }to{
+    opacity: 1;
+    transform: translateX(100%);
+  }
+`
 
 const MenuContainer = styled.div`
   width: 100vw;
@@ -17,8 +36,13 @@ const MenuContainer = styled.div`
   top: 0;
   padding-top: 10vh;
   box-sizing: border-box;
-  transition: 1s;
-  transform: ${({ showMenu }) => showMenu ? 'translateX(0)' : 'translateX(-100%)'};
+  animation-name: ${({ showMenu }) => showMenu ? fade : defa};
+  /* animation-duration: 0.35s; */
+  -webkit-transition: 3s linear 2s;
+-moz-transition: 3s linear 2s;
+-o-transition: 3s linear 2s;
+transition: 3s linear 2s;
+  
 `
 const MenuItem = styled.div`
   display: flex;

@@ -36,6 +36,10 @@ const MyPhoto = styled.img`
   @media only screen and (max-width: 768px) {
     margin: 0;
   }
+  @media only screen and (max-width: 415px) {
+    width: 260px;
+    height: 260px;
+  }
 `
 const Title = styled.h3`
   margin: 20px 0;
